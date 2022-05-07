@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container flex-jc-sb">
+                <img src="/img/logo.png" alt="" class="header__logo">
+                <nav class="header__nav">
+                    <ul>
+                        <li><a href="" style="color: #FB7515;">Главная</a></li>
+                        <li><a href="">Решение</a></li>
+                        <li><a href="">Для кого</a></li>
+                        <li><a href="">Команда</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <section class="register">
+                <div class="container flex-jc-c">
+                    <form action="#" class="register__form js-form">
+                        <div class="form__title">
+                            Вход
+                        </div>
+                        <div class="form__completion">
+                            <input class=" input js-input" type="text" placeholder="Ф.И.О." id="name" style="display: none;">
+                            <span class="notification"></span>
+                            <input class="input js-input js-input-phone" type="tel" placeholder="Номер телефона" id="phone" style="display: none;">
+                            <span class="notification"></span>
+                            <input class="input js-input js-input-email2" type="email" placeholder="Ваш email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+                            <span class="notification"></span>
+                            <div class="input__wrapper">
+                                <input class="input js-input password-one" type="password" placeholder="Пароль" class="" id="password1">
+                                <button id="test-btn" type="button" onclick="show()"></button>
+                            </div>
+                            <input class="input js-input password-two" type="password" placeholder="Повторите пароль" id="password2" style="display: none;">
+                            <span class="notification"></span>
+                        </div>
+                        <button class="form__button" type="submit">
+							Войти
+						</button>
+                        <div class="form__bottom">
+							<div class="form__link-login">
+								<p>Нет аккаунта?</p>
+								<a href="/register.html" class="form__link">
+									Зарегистрироваться
+						   		</a>
+							</div>
+							<a href="/recovery.html" class="form__recovery">
+								Восстановить пароль
+							</a>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+
+        </footer>
+    </div>
+    <script src="/js/button-visible.js"></script>
+</body>
+
+</html>
